@@ -1,0 +1,20 @@
+ASSSIGNMENT :02
+prepare dictonary for employee with the fields
+empno,empname,empdesign,empsal,city,empdoj
+ANSWER:
+...................................
+E={1:['B.H.S.Phanendra','Trainee Engineer','29july2022',75000,'Bangalore'],2:['SATYANARAYANA','System Analyst','06june2022',50000,'Bangalore'],3:['PRADEEP','Project Manager.','29june2022',65000,'Hyderabad']}
+x=int(input('Enter the number: '))
+print('Employee name : ',E[x][0])
+print('Employee designation: ',E[x][1])
+print('D.O.J : ',E[x][2])
+print(' Employee Salary : ',E[x][3])
+print('City : ',E[x][4])
+
+OUTPUT:
+Enter the number: 2
+Employee name :  SATYANARAYANA
+Employee designation:  System Analyst
+D.O.J :  06june2022
+ Employee Salary :  50000
+City :  Bangalore
