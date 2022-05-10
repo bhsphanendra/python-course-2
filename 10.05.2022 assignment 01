@@ -1,0 +1,15 @@
+count primes in leet code
+
+n=int(input())
+p=[]
+for i in range (2, n+1):
+    for j in range(2, i):
+        if i%j == 0:
+            break
+    else:
+        p.append(i)
+print(len(p))
+
+output:
+ n = 10
+ 4
