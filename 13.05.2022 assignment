@@ -1,0 +1,39 @@
+https://practice.geeksforgeeks.org/problems/prime-number2314/1
+
+#User function Template for python3
+import math
+class Solution:
+    def isPrime (self, n):
+        seive=[True for i in range(n+1)]
+        seive[0]=seive[1]=False
+        x=int(math.sqrt(n))
+        for i in range(2,x+1):
+            if seive[i]:
+                for j in range(i*i,n+1,i):
+                    seive[j]=False
+        if seive[n]:
+            return 1
+        else:
+            return 0
+        
+        # code here
+
+#{ 
+#  Driver Code Starts
+#Initial Template for Python 3
+
+if __name__ == '__main__': 
+    t = int (input ())
+    for _ in range (t):
+        N = int(input())
+       
+
+        ob = Solution()
+        print(ob.isPrime(N))
+# } Driver Code Ends
+
+
+output:
+
+N = 5
+1
