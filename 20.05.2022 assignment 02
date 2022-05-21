@@ -1,0 +1,18 @@
+:Perform bitwise operations with two inputs.
+
+a=int(input("ENTER A :"))
+b=int(input("ENTER B:" ))
+print(a&b)
+print(a|b)
+print(a^b)
+print(a>>b)
+print(a<<b)
+
+output:
+ENTER A: 20
+ENTER B: 15
+4
+31
+27
+0
+655360
