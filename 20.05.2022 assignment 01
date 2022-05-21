@@ -1,0 +1,12 @@
+singleNumber program in leet ccode
+
+class Solution:
+    def singleNumber(self,l):
+        s=0
+        for i in l:
+            s=s^i
+        return s
+        
+output:
+[2,2,1]
+1
